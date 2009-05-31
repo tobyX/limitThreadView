@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE data SYSTEM "http://www.woltlab.com/DTD/options.dtd">
+<data>
+	<import>
+		<categories>
+			<category name="board.thread.limitguestview">
+				<parent>board.thread</parent>
+			</category>
+		</categories>
+
+		<options>
+
+			<option name="limit_guest_view_allow_search_bots">
+				<categoryname>board.thread.limitguestview</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+
+			<option name="limit_guest_view_show_warning_down">
+				<categoryname>board.thread.limitguestview</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+
+		</options>
+	</import>
+</data>

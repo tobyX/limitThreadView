@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "DTD/language.dtd">
+<language languagecode="en">
+
+	<category name="wbb.acp.board">
+		<item name="wbb.acp.board.limitguestview"><![CDATA[Limit Guestview]]></item>
+		<item name="wbb.acp.board.limitguestview.description"><![CDATA[How many Posts is a Guest allowed to see? 0 will deactivate this feature!]]></item>
+	</category>
+
+	<category name="wbb.thread">
+		<item name="wbb.thread.limitguestviewone"><![CDATA[The guest access to this forum was limited. Overall there are]]></item>
+		<item name="wbb.thread.limitguestviewtwo"><![CDATA[Postings in this thread.<br />To read them all you should <a href="index.php?page=Register">register</a> yourself.]]></item>
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.board.thread.limitguestview"><![CDATA[Limit Guestview]]></item>
+		<item name="wcf.acp.option.category.board.thread.limitguestview.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.limit_guest_view_allow_search_bots"><![CDATA[Allow Searchbots]]></item>
+		<item name="wcf.acp.option.limit_guest_view_allow_search_bots.description"><![CDATA[Aknowledged search engine robots are allowed to see the whole thread.]]></item>
+		<item name="wcf.acp.option.limit_guest_view_show_warning_down"><![CDATA[Show warning also below]]></item>
+		<item name="wcf.acp.option.limit_guest_view_show_warning_down.description"><![CDATA[Should the blue warning also be shown below the thread?]]></item>
+	</category>
+
+</language>

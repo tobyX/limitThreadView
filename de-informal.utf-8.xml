@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "DTD/language.dtd">
+<language languagecode="de-informal">
+
+	<category name="wbb.acp.board">
+		<item name="wbb.acp.board.limitguestview"><![CDATA[Gästeansicht limitieren]]></item>
+		<item name="wbb.acp.board.limitguestview.description"><![CDATA[Wieviele Beiträge darf ein Gast sehen? 0 deaktiviert das Feature!]]></item>
+	</category>
+
+	<category name="wbb.thread">
+		<item name="wbb.thread.limitguestviewone"><![CDATA[Der Gästezugriff auf dieses Forum wurde limitiert. Insgesamt gibt es]]></item>
+		<item name="wbb.thread.limitguestviewtwo"><![CDATA[Beiträge in diesem Thema.<br />Um sie alle lesen zu können musst du dich vorher <a href="index.php?page=Register">registrieren</a>.]]></item>
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.board.thread.limitguestview"><![CDATA[Gästeansicht limitieren]]></item>
+		<item name="wcf.acp.option.category.board.thread.limitguestview.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.limit_guest_view_allow_search_bots"><![CDATA[Suchbots erlauben]]></item>
+		<item name="wcf.acp.option.limit_guest_view_allow_search_bots.description"><![CDATA[Sofern erkannt dürfen Suchmaschinenroboter das gesamte Thema einsehen.]]></item>
+		<item name="wcf.acp.option.limit_guest_view_show_warning_down"><![CDATA[Warnmeldung auch unten anzeigen]]></item>
+		<item name="wcf.acp.option.limit_guest_view_show_warning_down.description"><![CDATA[Soll die blaue Warnmeldung für Gäste auch unter dem Thema angezeigt werden?]]></item>
+	</category>
+
+</language>
