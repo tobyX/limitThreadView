@@ -4,22 +4,20 @@
 
 	<packageInformation>
 		<packageName>Limit Guest View</packageName>
-		<isUnique>1</isUnique>
 		<packageDescription>Themenansicht für Gäste einschränken</packageDescription>
-		<standalone>0</standalone>
-		<version>2.1.0</version>
-		<date>2009-10-18</date>
+		<version>2.1.1</version>
+		<date>2011-04-29</date>
 		<plugin>com.woltlab.wbb</plugin>
 	</packageInformation>
 
 	<authorInformation>
 		<author>Tobias Friebel</author>
-		<authorURL>http://wbbmods.tobyf.de/trac/wiki/LimitGuestView</authorURL>
+		<authorURL>http://www.enigma-forum.de/board220-tobys-wbb-ecke/</authorURL>
 	</authorInformation>
 
 	<requiredpackages>
-		<requiredpackage minversion="3.1.0">com.woltlab.wbb</requiredpackage>
-		<requiredpackage minversion="1.1.0">com.woltlab.wcf</requiredpackage>
+		<requiredpackage>com.woltlab.wbb</requiredpackage>
+		<requiredpackage minversion="1.1">com.woltlab.wcf</requiredpackage>
 	</requiredpackages>
 
 	<instructions type="install">
@@ -34,7 +32,7 @@
 		<options>options.xml</options>
 	</instructions>
 
-	<instructions type="update" fromversion="2.0.0">
+	<instructions type="update" fromversion="2.*">
 		<files>files.tar</files>
 		<languages languagecode="de">de.utf-8.xml</languages>
 		<languages languagecode="de-informal">de-informal.utf-8.xml</languages>
