@@ -3,22 +3,33 @@
 <language languagecode="de-informal">
 
 	<category name="wbb.acp.board">
-		<item name="wbb.acp.board.limitguestview"><![CDATA[Gästeansicht limitieren]]></item>
-		<item name="wbb.acp.board.limitguestview.description"><![CDATA[Wieviele Beiträge darf ein Gast sehen? 0 deaktiviert das Feature!]]></item>
+		<item name="wbb.acp.board.limitthreadview"><![CDATA[Themenansicht limitieren]]></item>
+		<item name="wbb.acp.board.limitthreadview.description"><![CDATA[Wieviele Beiträge darf ein eingeschränkter Benutzer sehen? Bei -1 wird der in den Optionen definierte Wert verwendet.]]></item>
+		<item name="wbb.acp.board.permissions.canViewLimitedContent"><![CDATA[Kann Themen ganz sehen]]></item>
 	</category>
 
 	<category name="wbb.thread">
-		<item name="wbb.thread.limitguestviewone"><![CDATA[Der Gästezugriff auf dieses Forum wurde limitiert. Insgesamt gibt es]]></item>
-		<item name="wbb.thread.limitguestviewtwo"><![CDATA[Beiträge in diesem Thema.<br />Um sie alle lesen zu können musst du dich vorher <a href="index.php?page=Register">registrieren</a>.]]></item>
+		<item name="wbb.thread.limitthreadview"><![CDATA[<p class="info">Dein Zugriff auf dieses Thema wurde eingeschränkt. Insgesamt gibt es {#$posts} {if $posts == 1}Beitrag{else}Beiträge{/if} in diesem Thema.<br />Um sie alle lesen zu können musst Du dich vorher <a href="index.php?page=Register">registrieren</a>/freischalten lassen.</p>]]></item>
+	</category>
+
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.user.board.canViewLimitedContent"><![CDATA[Kann Themen ganz sehen]]></item>
+		<item name="wcf.acp.group.option.user.board.canViewLimitedContent.description"><![CDATA[Mitglieder dieser Benutzergruppe können alle Beiträge in einem Thema sehen.]]></item>
 	</category>
 
 	<category name="wcf.acp.option">
-		<item name="wcf.acp.option.category.board.thread.limitguestview"><![CDATA[Gästeansicht limitieren]]></item>
-		<item name="wcf.acp.option.category.board.thread.limitguestview.description"><![CDATA[]]></item>
-		<item name="wcf.acp.option.limit_guest_view_allow_search_bots"><![CDATA[Suchbots erlauben]]></item>
-		<item name="wcf.acp.option.limit_guest_view_allow_search_bots.description"><![CDATA[Sofern erkannt dürfen Suchmaschinenroboter das gesamte Thema einsehen.]]></item>
-		<item name="wcf.acp.option.limit_guest_view_show_warning_down"><![CDATA[Warnmeldung auch unten anzeigen]]></item>
-		<item name="wcf.acp.option.limit_guest_view_show_warning_down.description"><![CDATA[Soll die blaue Warnmeldung für Gäste auch unter dem Thema angezeigt werden?]]></item>
+		<item name="wcf.acp.option.category.board.thread.limitthreadview"><![CDATA[Themenansicht einschränken]]></item>
+		<item name="wcf.acp.option.category.board.thread.limitthreadview.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.limit_thread_view_allow_search_bots"><![CDATA[Suchbots erlauben]]></item>
+		<item name="wcf.acp.option.limit_thread_view_allow_search_bots.description"><![CDATA[Sofern erkannt dürfen Suchmaschinenroboter das gesamte Thema sehen.]]></item>
+		<item name="wcf.acp.option.limit_thread_view_show_warning_down"><![CDATA[Warnmeldung auch unten anzeigen]]></item>
+		<item name="wcf.acp.option.limit_thread_view_show_warning_down.description"><![CDATA[Soll die Warnmeldung für eingeschränkte Benutzer auch unter dem Thema angezeigt werden?]]></item>
+		<item name="wcf.acp.option.module_limit_thread_view"><![CDATA[Themenansicht einschränken]]></item>
+		<item name="wcf.acp.option.module_limit_thread_view.description"><![CDATA[Aktiviert die Möglichkeit, die Anzahl an sichtbaren Beiträgen in Themen für bestimmte Benutzer einzuschränken.]]></item>
+		<item name="wcf.acp.option.module_limit_thread_feeds"><![CDATA[Feedlänge einschränken]]></item>
+		<item name="wcf.acp.option.module_limit_thread_feeds.description"><![CDATA[Aktiviert die Möglichkeit, die Anzahl an sichtbaren Beiträgen in Feeds einzuschränken, unabhängig irgendwelcher Gruppenrechte. Ohne diese Option werden Feeds nie eingeschränkt, mit werden alle Feeds immer auf die vorgegebene Standardlänge gekürzt! Das macht Feeds praktisch unbrauchbar! Achtung, Feeds werden immer chronologisch abwärts sortiert, daher ist immer der neueste Beitrag zu sehen!]]></item>
+		<item name="wcf.acp.option.limit_thread_view_default_limit"><![CDATA[Standardlimit]]></item>
+		<item name="wcf.acp.option.limit_thread_view_default_limit.description"><![CDATA[Definiert das Standardlimit auf das Themen eingeschränkt werden sollen. Kann pro Forum überschrieben werden.]]></item>
 	</category>
 
 </language>

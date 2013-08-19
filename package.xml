@@ -1,18 +1,20 @@
 <?xml version="1.0"?>
 <!DOCTYPE package SYSTEM "DTD/package.dtd">
-<package name="com.toby.wbb.limitguestview">
+<package name="com.toby.wbb.limitthreadview">
 
 	<packageInformation>
-		<packageName>Limit Guest View</packageName>
-		<packageDescription>Themenansicht für Gäste einschränken</packageDescription>
-		<version>2.1.1</version>
-		<date>2011-04-29</date>
+		<packageName>Limit Thread View</packageName>
+		<packageDescription>Anzahl an Beiträgen in Themen für beliebige Gruppen einschränken</packageDescription>
+		<version>1.0.0</version>
+		<date>2013-08-19</date>
 		<plugin>com.woltlab.wbb</plugin>
 	</packageInformation>
 
 	<authorInformation>
 		<author>Tobias Friebel</author>
-		<authorURL>http://www.enigma-forum.de/board220-tobys-wbb-ecke/</authorURL>
+		<authorURL>http://www.enigma-forum.de/</authorURL>
+		<license>CC BY-NC-ND 3.0</license>
+		<licenseURL>http://creativecommons.org/licenses/by-nc-nd/3.0/</licenseURL>
 	</authorInformation>
 
 	<requiredpackages>
@@ -27,17 +29,9 @@
 		<files>files.tar</files>
 		<eventlistener>eventlistener.xml</eventlistener>
 		<acptemplates>acptemplates.tar</acptemplates>
-		<templates>templates.tar</templates>
 		<sql>install.sql</sql>
 		<options>options.xml</options>
-	</instructions>
-
-	<instructions type="update" fromversion="2.*">
-		<files>files.tar</files>
-		<languages languagecode="de">de.utf-8.xml</languages>
-		<languages languagecode="de-informal">de-informal.utf-8.xml</languages>
-		<languages languagecode="en">en.utf-8.xml</languages>
-		<options>options.xml</options>
+		<groupoptions>groupoptions.xml</groupoptions>
 	</instructions>
 
 </package>

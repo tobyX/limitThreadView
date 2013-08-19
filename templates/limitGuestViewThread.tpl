@@ -1,1 +1,0 @@
-<p class="info">{lang}wbb.thread.limitguestviewone{/lang} {$limitGuestView} {lang}wbb.thread.limitguestviewtwo{/lang}</p>
