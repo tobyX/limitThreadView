@@ -1,17 +1,21 @@
 <?php
+namespace wbb\system\event\listener;
+use wcf\system\event\IEventListener;
+use wcf\system\WCF;
+
 /**
- * Copyright (c) 2013 Tobias Friebel
- * Authors: Tobias Friebel <TobyF@Web.de>
+ * Provides ACP integration
  *
- * Lizenz: CC Namensnennung-Keine kommerzielle Nutzung-Keine Bearbeitung
- * http://creativecommons.org/licenses/by-nc-nd/2.0/de/
+ * @author	Tobias Friebel <woltlab@tobyf.de>
+ * @copyright	2014 Tobias Friebel
+ * @license	Creative Commons Attribution-NoDerivatives <http://creativecommons.org/licenses/by-nd/4.0/legalcode>
+ * @package	com.toby.wbb.limitthreadview
+ * @subpackage	system.event.listener
+ * @category	WoltLab Burning Board
  */
-
-require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
-
-class LimitThreadViewACPListener implements EventListener
+class LimitThreadViewACPListener implements IEventListener
 {
-	private $limitThreadView = 0;
+	public $limitThreadView = 0;
 	private $isSave = false;
 
 	/**
@@ -43,8 +47,6 @@ class LimitThreadViewACPListener implements EventListener
 						'limitThreadView' => $this->limitThreadView,
 					));
 				}
-
-				WCF::getTPL()->append('additionalFields', WCF::getTPL()->fetch('limitThreadView'));
 			break;
 		}
 	}

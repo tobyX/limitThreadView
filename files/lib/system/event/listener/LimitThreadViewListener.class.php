@@ -1,18 +1,22 @@
 <?php
+namespace wbb\system\event\listener;
+use wcf\system\event\IEventListener;
+use wcf\system\WCF;
+
 /**
- * Copyright (c) 2013 Tobias Friebel
- * Authors: Tobias Friebel <TobyF@Web.de>
+ * Limits thread to configured length
  *
- * Lizenz: CC Namensnennung-Keine kommerzielle Nutzung-Keine Bearbeitung
- * http://creativecommons.org/licenses/by-nc-nd/2.0/de/
+ * @author	Tobias Friebel <woltlab@tobyf.de>
+ * @copyright	2014 Tobias Friebel
+ * @license	Creative Commons Attribution-NoDerivatives <http://creativecommons.org/licenses/by-nd/4.0/legalcode>
+ * @package	com.toby.wbb.limitthreadview
+ * @subpackage	system.event.listener
+ * @category	WoltLab Burning Board
  */
-
-require_once (WCF_DIR . 'lib/system/event/EventListener.class.php');
-
-class LimitThreadViewListener implements EventListener
+class LimitThreadViewListener implements IEventListener
 {
 	/**
-	 * @see EventListener::execute()
+	 * @see	\wcf\system\event\IEventListener::execute()
 	 */
 	public function execute($eventObj, $className, $eventName)
 	{
@@ -25,9 +29,6 @@ class LimitThreadViewListener implements EventListener
 			$limitCount = $eventObj->board->limitThreadView;
 		else
 			$limitCount = LIMIT_THREAD_VIEW_DEFAULT_LIMIT;
-
-		if ($eventObj->countItems() <= $limitCount)
-			return;
 
 		switch ($eventName)
 		{
@@ -49,6 +50,9 @@ class LimitThreadViewListener implements EventListener
 			break;
 
 			case 'assignVariables':
+				if ($eventObj->countItems() <= $limitCount)
+					return;
+
 				if ($limitCount <= $eventObj->itemsPerPage)
 				{
 					$eventObj->pages = 1;
@@ -62,10 +66,10 @@ class LimitThreadViewListener implements EventListener
 
 					if ($eventObj->pageNo == $pageMaxNo && $count < $eventObj->itemsPerPage)
 					{
-						foreach ($eventObj->postList->posts as $i => $post)
+						foreach ($eventObj->objectList as $i => $post)
 						{
 							if ($i >= $count)
-								unset($eventObj->postList->posts[$i]);
+								unset($eventObj->objectList[$i]);
 						}
 					}
 				}
@@ -75,10 +79,7 @@ class LimitThreadViewListener implements EventListener
 					$limitBox = WCF::getLanguage()->getDynamicVariable('wbb.thread.limitthreadview',
 							array('posts' => $eventObj->countItems()));
 
-					WCF :: getTPL()->append('userMessages', $limitBox);
-
-					if (LIMIT_THREAD_VIEW_SHOW_WARNING_DOWN)
-						WCF :: getTPL()->append('additionalBoxes', $limitBox);
+					WCF :: getTPL()->assign('limitMessageBox', $limitBox);
 				}
 			break;
 		}

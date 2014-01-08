@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE language SYSTEM "DTD/language.dtd">
-<language languagecode="de-informal">
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd"
+	languagecode="de" languagename="Deutsch" countrycode="de">
 
 	<category name="wbb.acp.board">
 		<item name="wbb.acp.board.limitthreadview"><![CDATA[Themenansicht limitieren]]></item>
@@ -9,7 +10,7 @@
 	</category>
 
 	<category name="wbb.thread">
-		<item name="wbb.thread.limitthreadview"><![CDATA[<p class="info">Dein Zugriff auf dieses Thema wurde eingeschränkt. Insgesamt gibt es {#$posts} {if $posts == 1}Beitrag{else}Beiträge{/if} in diesem Thema.<br />Um sie alle lesen zu können musst Du dich vorher <a href="index.php?page=Register">registrieren</a>/freischalten lassen.</p>]]></item>
+		<item name="wbb.thread.limitthreadview"><![CDATA[<p class="info">Ihr Zugriff auf dieses Thema wurde eingeschränkt. Insgesamt gibt es {#$posts} {if $posts == 1}Beitrag{else}Beiträge{/if} in diesem Thema.<br />Um sie alle lesen zu können müssen Sie sich vorher <a href="index.php/Disclaimer/">registrieren</a> oder freischalten lassen.</p>]]></item>
 	</category>
 
 	<category name="wcf.acp.group">

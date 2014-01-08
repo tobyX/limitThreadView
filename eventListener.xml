@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/eventListener.xsd">
+	<import>
+		<eventlistener>
+			<eventclassname><![CDATA[wbb\page\ThreadPage]]></eventclassname>
+			<eventname>readData</eventname>
+			<listenerclassname><![CDATA[wbb\system\event\listener\LimitThreadViewListener]]></listenerclassname>
+		</eventlistener>
+		<eventlistener>
+			<eventclassname><![CDATA[wbb\page\ThreadPage]]></eventclassname>
+			<eventname>assignVariables</eventname>
+			<listenerclassname><![CDATA[wbb\system\event\listener\LimitThreadViewListener]]></listenerclassname>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname><![CDATA[wbb\page\BoardFeedPage]]></eventclassname>
+			<eventname>readData</eventname>
+			<listenerclassname><![CDATA[wbb\system\event\listener\LimitThreadViewFeedListener]]></listenerclassname>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname><![CDATA[wbb\acp\form\BoardAddForm]]></eventclassname>
+			<environment>admin</environment>
+			<eventname>assignVariables</eventname>
+			<listenerclassname><![CDATA[wbb\system\event\listener\LimitThreadViewACPListener]]></listenerclassname>
+			<inherit>1</inherit>
+		</eventlistener>
+		<eventlistener>
+			<eventclassname><![CDATA[wbb\acp\form\BoardAddForm]]></eventclassname>
+			<environment>admin</environment>
+			<eventname>readFormParameters</eventname>
+			<listenerclassname><![CDATA[wbb\system\event\listener\LimitThreadViewACPListener]]></listenerclassname>
+			<inherit>1</inherit>
+		</eventlistener>
+		<eventlistener>
+			<eventclassname><![CDATA[wbb\acp\form\BoardAddForm]]></eventclassname>
+			<environment>admin</environment>
+			<eventname>save</eventname>
+			<listenerclassname><![CDATA[wbb\system\event\listener\LimitThreadViewACPListener]]></listenerclassname>
+			<inherit>1</inherit>
+		</eventlistener>
+
+	</import>
+</data>
