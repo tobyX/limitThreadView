@@ -14,13 +14,7 @@
 			<option name="module_limit_thread_view">
 				<categoryname>module.content</categoryname>
 				<optiontype>boolean</optiontype>
-				<defaultvalue>0</defaultvalue>
-			</option>
-
-			<option name="module_limit_thread_feeds">
-				<categoryname>module.content</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>0</defaultvalue>
+				<defaultvalue>1</defaultvalue>
 			</option>
 
 			<option name="limit_thread_view_allow_search_bots">
