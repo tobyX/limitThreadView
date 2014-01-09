@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd"
-	languagecode="en" languagename="English" countrycode="gb">code="en">
+	languagecode="en" languagename="English" countrycode="gb">
 
 	<category name="wbb.acp.board">
 		<item name="wbb.acp.board.limitthreadview"><![CDATA[Limit Threadview]]></item>
-		<item name="wbb.acp.board.limitthreadview.description"><![CDATA[How many posts is a limited user allowed to see? With -1 the default value from the options will be used.]]></item>
-		<item name="wbb.acp.board.permissions.canViewLimitedContent"><![CDATA[Can see threads entirely]]></item>
+		<item name="wbb.acp.board.limitthreadview.description"><![CDATA[How many posts is a limited user allowed to see?]]></item>
+	</category>
+
+	<category name="wcf.acl.option">
+		<item name="wcf.acl.option.com.woltlab.wbb.board.canViewLimitedContent"><![CDATA[Can see threads without limitation]]></item>
 	</category>
 
 	<category name="wbb.thread">
@@ -14,7 +17,7 @@
 	</category>
 
 	<category name="wcf.acp.group">
-		<item name="wcf.acp.group.option.user.board.canViewLimitedContent"><![CDATA[Can see threads entirely]]></item>
+		<item name="wcf.acp.group.option.user.board.canViewLimitedContent"><![CDATA[Can see threads without limitation]]></item>
 		<item name="wcf.acp.group.option.user.board.canViewLimitedContent.description"><![CDATA[Members of this usergroup can see threads entirely.]]></item>
 	</category>
 
@@ -27,8 +30,6 @@
 		<item name="wcf.acp.option.limit_thread_view_show_warning_down.description"><![CDATA[Should the blue warning also be shown below the thread?]]></item>
 		<item name="wcf.acp.option.module_limit_thread_view"><![CDATA[Limit Threadview]]></item>
 		<item name="wcf.acp.option.module_limit_thread_view.description"><![CDATA[Enables the option to limit the number of visible posts in threads for certain users.]]></item>
-		<item name="wcf.acp.option.module_limit_thread_feeds"><![CDATA[Limit length of feeds]]></item>
-		<item name="wcf.acp.option.module_limit_thread_feeds.description"><![CDATA[Enables the option to limit the number of visible posts to your feed, regardless of any group rights. Without this option feeds are never restricted, with all feeds are always truncated to the specified standard length! This makes feeds practically useless! Attention, feeds are always sorted chronologically backward, therefore is always the most recent post to see!]]></item>
 		<item name="wcf.acp.option.limit_thread_view_default_limit"><![CDATA[Defaultlimit]]></item>
 		<item name="wcf.acp.option.limit_thread_view_default_limit.description"><![CDATA[Defines the default limit for threads. Can be overridden per forum.]]></item>
 	</category>
