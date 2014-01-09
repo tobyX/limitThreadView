@@ -47,12 +47,10 @@ class LimitThreadViewListener implements IEventListener
 						$eventObj->pageNo = $pageMaxNo;
 					}
 				}
+				
 			break;
 
 			case 'assignVariables':
-				if ($eventObj->countItems() <= $limitCount)
-					return;
-
 				if ($limitCount <= $eventObj->itemsPerPage)
 				{
 					$eventObj->pages = 1;
