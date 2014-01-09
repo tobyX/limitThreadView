@@ -5,7 +5,7 @@
 			<environment>user</environment>
 			<templatename>userNotice</templatename>
 			<eventname>userNotice</eventname>
-			<templatecode><![CDATA[{if $__wbb->isActiveApplication() && $templateName == 'thread'}{@$limitMessageBox}{/if}]]></templatecode>
+			<templatecode><![CDATA[{if $__wbb->isActiveApplication() && $templateName == 'thread' && $limitMessageBox|isset}{@$limitMessageBox}{/if}]]></templatecode>
 		</templatelistener>
 
 		<templatelistener name="limitThreadViewACP">
