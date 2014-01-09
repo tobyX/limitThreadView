@@ -5,7 +5,7 @@
 
 		<options>
 			<option name="user.board.canViewLimitedContent">
-				<categoryname>user.board.read</categoryname>
+				<categoryname>user.board.thread</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>0</defaultvalue>
 			</option>
