@@ -19,7 +19,7 @@ Limit the number of posts in threads for arbitrary groups
 
 --------------------------------------------------------------------------------
 
-Limit Thread View
+#Limit Thread View
 Schränkt die Menge an Beiträgen ein, die ein Gast sehen kann.
 
 ## Features:
