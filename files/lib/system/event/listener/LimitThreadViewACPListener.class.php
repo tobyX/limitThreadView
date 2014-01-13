@@ -15,7 +15,7 @@ use wcf\system\WCF;
  */
 class LimitThreadViewACPListener implements IEventListener
 {
-	public $limitThreadView = 0;
+	public $limitThreadView = null;
 	private $isSave = false;
 
 	/**
