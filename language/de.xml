@@ -25,13 +25,15 @@
 		<item name="wcf.acp.option.category.board.thread.limitthreadview"><![CDATA[Themenansicht einschränken]]></item>
 		<item name="wcf.acp.option.category.board.thread.limitthreadview.description"><![CDATA[]]></item>
 		<item name="wcf.acp.option.limit_thread_view_allow_search_bots"><![CDATA[Suchbots erlauben]]></item>
-		<item name="wcf.acp.option.limit_thread_view_allow_search_bots.description"><![CDATA[Sofern erkannt dürfen Suchmaschinenroboter das gesamte Thema sehen.]]></item>
+		<item name="wcf.acp.option.limit_thread_view_allow_search_bots.description"><![CDATA[Sofern erkannt dürfen Suchmaschinenroboter das gesamte Thema sehen. Achtung, dies kann von Suchmaschinen erkannt und mit Sanktionen belegt werden!]]></item>
 		<item name="wcf.acp.option.limit_thread_view_show_warning_down"><![CDATA[Warnmeldung auch unten anzeigen]]></item>
 		<item name="wcf.acp.option.limit_thread_view_show_warning_down.description"><![CDATA[Soll die Warnmeldung für eingeschränkte Benutzer auch unter dem Thema angezeigt werden?]]></item>
 		<item name="wcf.acp.option.module_limit_thread_view"><![CDATA[Themenansicht einschränken]]></item>
 		<item name="wcf.acp.option.module_limit_thread_view.description"><![CDATA[Aktiviert die Möglichkeit, die Anzahl an sichtbaren Beiträgen in Themen für bestimmte Benutzer einzuschränken.]]></item>
 		<item name="wcf.acp.option.limit_thread_view_default_limit"><![CDATA[Standardlimit]]></item>
 		<item name="wcf.acp.option.limit_thread_view_default_limit.description"><![CDATA[Definiert das Standardlimit auf das Themen eingeschränkt werden sollen. Kann pro Forum überschrieben werden.]]></item>
+		<item name="wcf.acp.option.limit_thread_reverse_sort_order"><![CDATA[Beitragsreihenfolge umdrehen]]></item>
+		<item name="wcf.acp.option.limit_thread_reverse_sort_order.description"><![CDATA[Dreht die Reihenfolge der Beiträge in einem eingeschränkten Thema um. Das heißt, das die neuesten Beiträge angezeigt werden und ältere ausgeblendet.]]></item>
 	</category>
 
 </language>

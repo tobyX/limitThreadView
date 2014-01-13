@@ -25,13 +25,15 @@
 		<item name="wcf.acp.option.category.board.thread.limitthreadview"><![CDATA[Limit Threadview]]></item>
 		<item name="wcf.acp.option.category.board.thread.limitthreadview.description"><![CDATA[]]></item>
 		<item name="wcf.acp.option.limit_thread_view_allow_search_bots"><![CDATA[Allow Searchbots]]></item>
-		<item name="wcf.acp.option.limit_thread_view_allow_search_bots.description"><![CDATA[Aknowledged search engine robots are allowed to see the whole thread.]]></item>
+		<item name="wcf.acp.option.limit_thread_view_allow_search_bots.description"><![CDATA[Known search engine robots are allowed to see the whole thread. Warning, this can be recognized and be punished by said search engines!]]></item>
 		<item name="wcf.acp.option.limit_thread_view_show_warning_down"><![CDATA[Show warning also below]]></item>
 		<item name="wcf.acp.option.limit_thread_view_show_warning_down.description"><![CDATA[Should the blue warning also be shown below the thread?]]></item>
 		<item name="wcf.acp.option.module_limit_thread_view"><![CDATA[Limit Threadview]]></item>
 		<item name="wcf.acp.option.module_limit_thread_view.description"><![CDATA[Enables the option to limit the number of visible posts in threads for certain users.]]></item>
 		<item name="wcf.acp.option.limit_thread_view_default_limit"><![CDATA[Defaultlimit]]></item>
 		<item name="wcf.acp.option.limit_thread_view_default_limit.description"><![CDATA[Defines the default limit for threads. Can be overridden per forum.]]></item>
+		<item name="wcf.acp.option.limit_thread_reverse_sort_order"><![CDATA[Reverse sorting of postings]]></item>
+		<item name="wcf.acp.option.limit_thread_reverse_sort_order.description"><![CDATA[Reverts the order of the posts in a limited topic. Because of this the most recent posts are shown and older hidden.]]></item>
 	</category>
 
 </language>
