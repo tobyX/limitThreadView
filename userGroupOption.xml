@@ -8,6 +8,7 @@
 				<categoryname>user.board.thread</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>0</defaultvalue>
+				<userdefaultvalue>1</userdefaultvalue>
 			</option>
 		</options>
 
