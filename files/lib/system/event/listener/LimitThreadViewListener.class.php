@@ -8,7 +8,7 @@ use wcf\system\WCF;
  *
  * @author	Tobias Friebel <woltlab@tobyf.de>
  * @copyright	2014 Tobias Friebel
- * @license	Creative Commons Attribution-NoDerivatives <http://creativecommons.org/licenses/by-nd/4.0/legalcode>
+ * @license	Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International <http://creativecommons.org/licenses/by-nc-nd/4.0/deed.en>
  * @package	com.toby.wbb.limitthreadview
  * @subpackage	system.event.listener
  * @category	WoltLab Burning Board
@@ -47,7 +47,12 @@ class LimitThreadViewListener implements IEventListener
 						$eventObj->pageNo = $pageMaxNo;
 					}
 				}
-				
+
+				if (LIMIT_THREAD_REVERSE_SORT_ORDER)
+				{
+					$eventObj->sortOrder = 'DESC';
+					$eventObj->sortField = 'post.time';
+				}
 			break;
 
 			case 'assignVariables':
