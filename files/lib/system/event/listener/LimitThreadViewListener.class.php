@@ -25,7 +25,7 @@ class LimitThreadViewListener implements IEventListener
 			(LIMIT_THREAD_VIEW_ALLOW_SEARCH_BOTS && WCF :: getSession()->spiderID))
 			return;
 
-		if ($eventObj->board->limitThreadView > -1)
+		if ($eventObj->board->limitThreadView > 0)
 			$limitCount = $eventObj->board->limitThreadView;
 		else
 			$limitCount = LIMIT_THREAD_VIEW_DEFAULT_LIMIT;
