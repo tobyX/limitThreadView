@@ -7,7 +7,7 @@
 	<packageinformation>
 		<packagename><![CDATA[Limit Thread View]]></packagename>
 		<packagename language="de"><![CDATA[Limit Thread View]]></packagename>
-		<packagedescription><![CDATA[Anzahl an Beiträgen in Themen für beliebige Gruppen einschränken]]></packagedescription>
+		<packagedescription><![CDATA[Limit the number of posts in threads for arbitrary groups]]></packagedescription>
 		<packagedescription language="de"><![CDATA[Anzahl an Beiträgen in Themen für beliebige Gruppen einschränken]]></packagedescription>
 		<version>3.0.0 Beta 1</version>
 		<date>2014-01-13</date>
