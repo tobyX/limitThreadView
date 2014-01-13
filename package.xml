@@ -9,9 +9,9 @@
 		<packagename language="de"><![CDATA[Limit Thread View]]></packagename>
 		<packagedescription><![CDATA[Anzahl an Beiträgen in Themen für beliebige Gruppen einschränken]]></packagedescription>
 		<packagedescription language="de"><![CDATA[Anzahl an Beiträgen in Themen für beliebige Gruppen einschränken]]></packagedescription>
-		<version>3.0.0 Alpha 2</version>
-		<date>2014-01-08</date>
-		<license><![CDATA[Creative Commons Attribution-NoDerivatives <http://creativecommons.org/licenses/by-nd/4.0/legalcode>]]></license>
+		<version>3.0.0 Beta 1</version>
+		<date>2014-01-13</date>
+		<license><![CDATA[Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International <http://creativecommons.org/licenses/by-nc-nd/4.0/deed.en>]]></license>
 	</packageinformation>
 
 	<authorinformation>
@@ -36,15 +36,6 @@
 		<instruction type="templateListener">templateListener.xml</instruction>
 		<instruction type="userGroupOption">userGroupOption.xml</instruction>
 		<instruction type="aclOption">aclOption.xml</instruction>
-
-		<!-- languages -->
-		<instruction type="language">language/*.xml</instruction>
-	</instructions>
-
-	<instructions type="update" fromversion="2.0.0 Alpha 1">
-		<!-- config -->
-		<instruction type="templateListener">templateListener.xml</instruction>
-		<instruction type="userGroupOption">userGroupOption.xml</instruction>
 
 		<!-- languages -->
 		<instruction type="language">language/*.xml</instruction>
