@@ -9,7 +9,7 @@
 		<packagename language="de"><![CDATA[Limit Thread View]]></packagename>
 		<packagedescription><![CDATA[Limit the number of posts in threads for arbitrary groups]]></packagedescription>
 		<packagedescription language="de"><![CDATA[Anzahl an Beiträgen in Themen für beliebige Gruppen einschränken]]></packagedescription>
-		<version>3.0.0 Beta 1</version>
+		<version>3.0.0 Beta 2</version>
 		<date>2014-01-13</date>
 		<license><![CDATA[Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International <http://creativecommons.org/licenses/by-nc-nd/4.0/deed.en>]]></license>
 	</packageinformation>
@@ -36,6 +36,18 @@
 		<instruction type="templateListener">templateListener.xml</instruction>
 		<instruction type="userGroupOption">userGroupOption.xml</instruction>
 		<instruction type="aclOption">aclOption.xml</instruction>
+
+		<!-- languages -->
+		<instruction type="language">language/*.xml</instruction>
+	</instructions>
+
+	<instructions type="update" fromversion="3.0.0 Beta 1">
+		<!-- files -->
+		<instruction type="file" application="wbb">files.tar</instruction>
+		<instruction type="acpTemplate" application="wbb">acptemplates.tar</instruction>
+
+		<!-- config -->
+		<instruction type="eventListener">eventListener.xml</instruction>
 
 		<!-- languages -->
 		<instruction type="language">language/*.xml</instruction>
