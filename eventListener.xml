@@ -35,6 +35,13 @@
 		<eventlistener>
 			<eventclassname><![CDATA[wbb\acp\form\BoardAddForm]]></eventclassname>
 			<environment>admin</environment>
+			<eventname>validate</eventname>
+			<listenerclassname><![CDATA[wbb\system\event\listener\LimitThreadViewACPListener]]></listenerclassname>
+			<inherit>1</inherit>
+		</eventlistener>
+		<eventlistener>
+			<eventclassname><![CDATA[wbb\acp\form\BoardAddForm]]></eventclassname>
+			<environment>admin</environment>
 			<eventname>save</eventname>
 			<listenerclassname><![CDATA[wbb\system\event\listener\LimitThreadViewACPListener]]></listenerclassname>
 			<inherit>1</inherit>
