@@ -6,6 +6,8 @@
 	<category name="wbb.acp.board">
 		<item name="wbb.acp.board.limitthreadview"><![CDATA[Limit Threadview]]></item>
 		<item name="wbb.acp.board.limitthreadview.description"><![CDATA[How many posts is a limited user allowed to see?]]></item>
+		<item name="wbb.acp.board.limitthreadview.error.notValid"><![CDATA[This value is invalid! To reset the field just empty it.]]></item>
+		<item name="wbb.acp.board.limitthreadview.error.tooLow"><![CDATA[Negative numbers are invalid! To reset the field just empty it.]]></item>
 	</category>
 
 	<category name="wcf.acl.option">
@@ -13,7 +15,7 @@
 	</category>
 
 	<category name="wbb.thread">
-		<item name="wbb.thread.limitthreadview"><![CDATA[<p class="info">Your access to this forum was limited. Overall there {if $posts == 1}is{else}are{/if} {#$posts} {if $posts == 1}post{else}posts{/if} in this thread.<br />To read them all you should <a href="index.php/Disclaimer/">register</a> or let you unlock.</p>]]></item>
+		<item name="wbb.thread.limitthreadview"><![CDATA[<p class="info">Your access to this forum was limited. Overall there {if $posts == 1}is{else}are{/if} {#$posts} {if $posts == 1}post{else}posts{/if} in this thread.<br />To read them all you should <a href="{link controller='Login'}{/link}">login or register</a> or let you unlock.</p>]]></item>
 	</category>
 
 	<category name="wcf.acp.group">

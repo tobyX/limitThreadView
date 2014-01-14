@@ -6,6 +6,8 @@
 	<category name="wbb.acp.board">
 		<item name="wbb.acp.board.limitthreadview"><![CDATA[Themenansicht limitieren]]></item>
 		<item name="wbb.acp.board.limitthreadview.description"><![CDATA[Wieviele Beiträge darf ein eingeschränkter Benutzer sehen?]]></item>
+		<item name="wbb.acp.board.limitthreadview.error.notValid"><![CDATA[Dieser Wert ist nicht zulässig! Zum Zurücksetzen das Feld einfach leeren.]]></item>
+		<item name="wbb.acp.board.limitthreadview.error.tooLow"><![CDATA[Negative Zahlen sind nicht zulässig! Zum Zurücksetzen das Feld einfach leeren.]]></item>
 	</category>
 
 	<category name="wcf.acl.option">
@@ -13,7 +15,7 @@
 	</category>
 
 	<category name="wbb.thread">
-		<item name="wbb.thread.limitthreadview"><![CDATA[<p class="info">Ihr Zugriff auf dieses Thema wurde eingeschränkt. Insgesamt gibt es {#$posts} {if $posts == 1}Beitrag{else}Beiträge{/if} in diesem Thema.<br />Um sie alle lesen zu können müssen Sie sich vorher <a href="index.php/Disclaimer/">registrieren</a> oder freischalten lassen.</p>]]></item>
+		<item name="wbb.thread.limitthreadview"><![CDATA[<p class="info">Ihr Zugriff auf dieses Thema wurde eingeschränkt. Insgesamt gibt es {#$posts} {if $posts == 1}Beitrag{else}Beiträge{/if} in diesem Thema.<br />Um sie alle lesen zu können müssen Sie sich vorher <a href="{link controller='Login'}{/link}">anmelden oder registrieren</a> oder freischalten lassen.</p>]]></item>
 	</category>
 
 	<category name="wcf.acp.group">
