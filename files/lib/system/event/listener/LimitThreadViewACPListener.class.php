@@ -2,6 +2,8 @@
 namespace wbb\system\event\listener;
 use wcf\system\event\IEventListener;
 use wcf\system\WCF;
+use wcf\system\exception\UserInputException;
+
 
 /**
  * Provides ACP integration
@@ -26,7 +28,18 @@ class LimitThreadViewACPListener implements IEventListener
 		switch ($eventName)
 		{
 			case 'readFormParameters':
-				if (isset($_POST['limitThreadView'])) $this->limitThreadView = intval($_POST['limitThreadView']);
+				if (isset($_POST['limitThreadView']) && !empty($_POST['limitThreadView'])) $this->limitThreadView = intval($_POST['limitThreadView']);
+			break;
+
+			case 'validate':
+				if (is_null($this->limitThreadView))
+					return;
+
+				if ($this->limitThreadView == 0)
+					throw new UserInputException('limitThreadView', 'notValid');
+
+				if ($this->limitThreadView < 0)
+					throw new UserInputException('limitThreadView', 'tooLow');
 			break;
 
 			case 'save':
