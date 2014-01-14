@@ -33,6 +33,8 @@ class LimitThreadViewListener implements IEventListener
 		switch ($eventName)
 		{
 			case 'readData':
+				$eventObj->postID = 0;
+
 				if ($eventObj->board->limitGuestView <= $eventObj->itemsPerPage)
 				{
 					$eventObj->pageNo = 1;
