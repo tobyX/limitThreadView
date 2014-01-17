@@ -13,12 +13,6 @@
 		</eventlistener>
 
 		<eventlistener>
-			<eventclassname><![CDATA[wbb\page\BoardFeedPage]]></eventclassname>
-			<eventname>readData</eventname>
-			<listenerclassname><![CDATA[wbb\system\event\listener\LimitThreadViewFeedListener]]></listenerclassname>
-		</eventlistener>
-
-		<eventlistener>
 			<eventclassname><![CDATA[wbb\acp\form\BoardAddForm]]></eventclassname>
 			<environment>admin</environment>
 			<eventname>assignVariables</eventname>
