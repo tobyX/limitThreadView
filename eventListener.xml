@@ -42,4 +42,13 @@
 		</eventlistener>
 
 	</import>
+
+	<delete>
+		<eventlistener>
+			<eventclassname><![CDATA[wbb\page\BoardFeedPage]]></eventclassname>
+			<eventname>readData</eventname>
+			<inherit>0</inherit>
+			<listenerclassname><![CDATA[wbb\system\event\listener\LimitThreadViewFeedListener]]></listenerclassname>
+		</eventlistener>
+	</delete>
 </data>
