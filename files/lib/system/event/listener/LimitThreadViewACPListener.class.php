@@ -48,7 +48,7 @@ class LimitThreadViewACPListener implements IEventListener
 			break;
 
 			case 'assignVariables':
-				if (is_object($eventObj->board) && !$this->isSave)
+				if (property_exists($eventObj, 'board') && is_object($eventObj->board) && !$this->isSave)
 				{
 					WCF::getTPL()->assign(array(
 						'limitThreadView' => $eventObj->board->limitThreadView,
